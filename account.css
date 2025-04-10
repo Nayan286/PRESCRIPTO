@@ -1,0 +1,276 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: outfit;
+    color: #000;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+/** utility classes **/
+.max-width {
+    max-width: 1235px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hover-links {
+    border-bottom: 2px solid #5f6fff00;
+    transition: 0.2s ease;
+}
+
+.hover-links:hover {
+    border-bottom: 2px solid #5f6fff;
+}
+
+/** main page **/
+
+.main {
+    position: relative;
+    overflow: hidden;
+    height: 150vh;
+    width: 100%;
+}
+
+/** header **/
+header {
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid #adadad;
+    padding-block: 40px;
+}
+
+.header {
+    justify-content: space-between;
+}
+
+/** logo **/
+.logo img {
+    width: 12rem;
+}
+
+/** nav content **/
+.nav-content {
+    gap: 30px;
+}
+
+.nav-content li {
+    list-style: none;
+}
+
+.nav-content li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding-block: 4px;
+    transition: all 0.2s ease-in-out;
+    font-weight: 500;
+}
+
+.nav-content button {
+    text-decoration: none;
+    font-size: 0.78rem;
+    text-transform: capitalize;
+    font-weight: 500;
+    border: 1px solid #0000002f;
+    background-color: transparent;
+    padding: 4px 10px;
+    border-radius: 50px;
+}
+
+.nav-content button #admin {
+    text-decoration: none;
+}
+
+/** nav button **/
+.nav-button #btn1 {
+    font-size: 0.9rem;
+    color: #fff;
+    background-color: #5f6fff;
+    border: 0;
+    padding: 12px 32px;
+    border-radius: 50px;
+}
+
+/** nav icon **/
+.nav-icon {
+    display: none;
+}
+
+/** account section **/
+section {
+    width: 384px;
+    height: 450px;
+    box-shadow: 1.5px 1.5px 6px #00000048;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translate(-50%, 0);
+}
+
+.account-content {
+    padding: 28px 35px 30px;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 18px;
+}
+
+.account-content h2 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #000000bf;
+}
+
+.account-content p {
+    font-weight: 500;
+    color: #0000009d;
+    font-size: 0.9rem;
+}
+
+/** inputs **/
+.inputs {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: -5px;
+}
+
+.inputs label {
+    font-size: 0.9rem;
+    color: #000000c2;
+    margin-bottom: 5px;
+}
+
+.inputs input {
+    margin-bottom: 15px;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #00000034;
+    padding-inline: 10px;
+    font-size: 0.9rem;
+}
+
+/** button **/
+.account-content button {
+    margin-top: -15px;
+    width: 100%;
+    height: 40px;
+    background-color: #5f6fff;
+    color: #fff;
+    font-size: 1rem;
+    border: 0;
+    border-radius: 5px;
+}
+
+/** text **/
+.account-content .text {
+    gap: 4px;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.text h4 {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #00000093;
+}
+
+.text a {
+    font-size: 0.9rem;
+    color: #5f6fff;
+}
+
+/** footer **/
+footer {
+    width: 76%;
+    height: 35vh;
+    padding-block: 30px;
+    border-bottom: 1px solid #0000004a;
+    position: absolute;
+    bottom: 65px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.footer-content {
+    width: 100%;
+    height: 100%;
+}
+
+/** left **/
+
+.footer-content .left {
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+.footer-content .left .image img {
+    width: 11rem;
+}
+
+.footer-content .left p {
+    font-size: 0.9rem;
+    width: 60%;
+    color: #000000c3;
+    line-height: 1.6;
+}
+
+/** right **/
+
+.footer-content .right {
+    width: 50%;
+    height: 100%;
+}
+
+.footer-content .right {
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding-block: 10px;
+}
+
+.footer-content .right .text h3 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.footer-content .right .text h4 {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+/** subfooter **/
+.subfooter {
+    width: 100%;
+    height: 60px;
+    position: relative;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.subfooter p {
+    font-size: 0.85rem;
+}
